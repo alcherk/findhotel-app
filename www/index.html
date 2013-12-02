@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Wait for Cordova to load
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            // Cordova is ready
+            function onDeviceReady() {
+                 var ref = window.open('http://hotels.findhotel.io/?mobile=1&label=iphone', '_blank', 'location=no,toolbar=no');
+            }
+        </script>
+    </body>
+</html>
