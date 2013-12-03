@@ -1,14 +1,22 @@
 <html>
     <head>
     </head>
-    <body>
+    <body style="text-align:center">
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             // Wait for Cordova to load
             document.addEventListener("deviceready", onDeviceReady, false);
-
+            var hiddenBrowser = true;
             // Cordova is ready
             function onDeviceReady() {
-                 var ref = window.open('http://hotels.findhotel.io/?mobile=1&label=iphone', '_blank', 'location=no,toolbar=no');
+                var ref = window.open('http://hotels.findhotel.io/?mobile=1&label=iphone', '_blank', 'hidden=yes,location=no,toolbar=no');
+                ref.addEventListener('loadstop', function(event) {
+                    if(hiddenBrowser){
+                        hiddenBrowser = false;
+                        ref.show();
+                    }                    
+                });
             }
         </script>
     </body>
