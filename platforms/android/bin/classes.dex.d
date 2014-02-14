@@ -6,6 +6,13 @@
 /home/emilio/projects/findhotel-app/platforms/android/bin/classes/eu/innovativetravel/findhotel/R$xml.class \
 /home/emilio/projects/findhotel-app/platforms/android/bin/classes/eu/innovativetravel/findhotel/R.class \
 /home/emilio/projects/findhotel-app/platforms/android/bin/classes/eu/innovativetravel/findhotel/BuildConfig.class \
+/home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
+/home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/devicemotion/AccelListener.class \
+/home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/geolocation/CordovaLocationListener$LocationTimeoutTask.class \
+/home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/geolocation/CordovaLocationListener.class \
+/home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/geolocation/NetworkListener.class \
+/home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/geolocation/GPSListener.class \
+/home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/geolocation/GeoBroker.class \
 /home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser.class \
 /home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$3.class \
 /home/emilio/projects/findhotel-app/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$2.class \
