@@ -5,7 +5,34 @@
     </head>
     <body style="text-align:center;padding:0;margin:0;height: 100%">
       <img style="vertical-align: middle;margin-top: 200px" src="img/hc_loader1.gif" />
-      <script type="text/javascript" src="phonegap.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="appsflyer.js"></script>
       <script type="text/javascript" src="js/findhotel.js"></script>
+
+      <script language="JavaScript" type="text/javascript">
+      // wait for PhoneGap to load
+      	document.addEventListener("deviceready", onDeviceReady, false);
+      	function onDeviceReady() {
+		    console.log('device ID: ' + device.uuid);
+
+		    var devKey = 'Pt68tpKJETmrYNtFEpUwXF';
+		    var appId = 'eu.innovativetravel.findhotel';
+		    var eventName = 'app_started';	// optional
+		    var eventValue = '';	// optional
+
+		    window.plugins.appsFlyer.notifyAppID(appId, devKey, device.uuid, eventName, eventValue);
+
+		    var gaPlugin;
+
+		    gaPlugin = window.plugins.gaPlugin;
+		    gaPlugin.init(nativePluginResultHandler, nativePluginErrorHandler, "UA-42637127-21", 10);
+
+		    gaPlugin.setVariable( nativePluginResultHandler, nativePluginErrorHandler, 1, device.uuid);
+		    gaPlugin.trackPage(nativePluginResultHandler, nativePluginErrorHandler, "app_index.html");
+
+		    function nativePluginResultHandler() {}
+		    function nativePluginErrorHandler() {}
+		}
+    </script>
     </body>
 </html>

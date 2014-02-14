@@ -34,13 +34,28 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/Acceleration.js",
+        "id": "org.apache.cordova.device-motion.Acceleration",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/accelerometer.js",
+        "id": "org.apache.cordova.device-motion.accelerometer",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "org.apache.cordova.inappbrowser": "0.2.5",
-    "org.apache.cordova.geolocation": "0.3.5"
+    "org.apache.cordova.geolocation": "0.3.5",
+    "org.apache.cordova.device-motion": "0.2.5"
 }
 // BOTTOM OF METADATA
 });

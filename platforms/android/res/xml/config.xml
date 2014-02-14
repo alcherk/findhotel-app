@@ -18,6 +18,9 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
+    <feature name="GAPlugin">
+        <param name="android-package" value="com.adobe.plugins.GAPlugin" />
+    </feature>
     <name>FindHotel</name>
     <description>
         FindHotel helps you book hotels worldwide
@@ -70,4 +73,12 @@
     <access origin="http://127.0.0.1*" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <access origin="*" />
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="AppsFlyerPlugin">
+    	<param name="android-package" value="org.apache.cordova.appsflyer.AppsFlyerPlugin" />
+    </feature>
+    <access origin="http://*.google-analytics.com"/>
+	<access origin="https://*.google-analytics.com"/>
 </widget>
