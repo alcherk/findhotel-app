@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -27,6 +28,7 @@
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		6C736DBA8B7B4E0386034988 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058520F59AC84D9C88A6FD25 /* CoreData.framework */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
 		7E7966E01810823500FA85AD /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D61810823500FA85AD /* icon-50.png */; };
@@ -37,10 +39,18 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
-		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
-		E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */; };
 		A9141A9CC3CD4E019019C95C /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA699DCF7E24128ABEB73A5 /* CDVInAppBrowser.m */; };
+		B4B33E9312E648DC86511507 /* GAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AC048547954640D0AB0620D5 /* GAPlugin.m */; };
+		BD6AE9F0150B48D69EF168C8 /* GoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6257462CC574E82A3ACDF4D /* GoogleAnalytics.a */; };
+		C2BA613697B7467EAC5D43D4 /* GoogleAnalytics.a in Sources */ = {isa = PBXBuildFile; fileRef = C8D60CC431BB4172B4C7FE0E /* GoogleAnalytics.a */; };
+		D25ADF04BBB749CFAAAC17EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5BA4DCA24463FBB4C53BB /* SystemConfiguration.framework */; };
+		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		D77842B418B24EDD00C4FCDF /* AppsFlyerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D77842B218B24EDD00C4FCDF /* AppsFlyerPlugin.m */; };
+		D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842B618B2500000C4FCDF /* AdSupport.framework */; };
+		D77842BB18B26DE800C4FCDF /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842B918B26D4200C4FCDF /* libAppsFlyerLib.a */; };
+		DD0B025048F141319ED7140B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265C6D099A04E03A55019F5 /* CDVDevice.m */; };
+		E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */; };
+		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,14 +71,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		058520F59AC84D9C88A6FD25 /* CoreData.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0DE5BA4DCA24463FBB4C53BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* FindHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FindHotel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* FindHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = "CordovaLib/CordovaLib.xcodeproj"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -86,9 +98,13 @@
 		30A0434414DC770100060A13 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localizable.strings; sourceTree = "<group>"; };
 		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* FindHotel-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FindHotel-Prefix.pch"; sourceTree = "<group>"; };
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6181B9358A6D43EBB00FEB80 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = com.adobe.plugins.GAPlugin/GAI.h; sourceTree = "<group>"; };
+		6DBC99329CD5443990B36935 /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = org.apache.cordova.device/CDVDevice.h; sourceTree = "<group>"; };
+		70847DAEA1B343779F4BF915 /* GAITransactionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITransactionItem.h; path = com.adobe.plugins.GAPlugin/GAITransactionItem.h; sourceTree = "<group>"; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
@@ -99,12 +115,25 @@
 		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		8265C6D099A04E03A55019F5 /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = org.apache.cordova.device/CDVDevice.m; sourceTree = "<group>"; };
+		86CA319461F34E3380D0306C /* GAPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAPlugin.h; path = com.adobe.plugins.GAPlugin/GAPlugin.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* FindHotel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FindHotel-Info.plist"; path = "../FindHotel-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		91C05746240440CC80A0638D /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = com.adobe.plugins.GAPlugin/GAITrackedViewController.h; sourceTree = "<group>"; };
+		A38ECC7017F74163BDCD6D1B /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = com.adobe.plugins.GAPlugin/GAITracker.h; sourceTree = "<group>"; };
+		A77BE332DFEF4A24BCCFB87A /* CDVInAppBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = org.apache.cordova.inappbrowser/CDVInAppBrowser.h; sourceTree = "<group>"; };
+		AC048547954640D0AB0620D5 /* GAPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAPlugin.m; path = com.adobe.plugins.GAPlugin/GAPlugin.m; sourceTree = "<group>"; };
+		B2A6CEF8E29E4A90A9161433 /* GAITransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITransaction.h; path = com.adobe.plugins.GAPlugin/GAITransaction.h; sourceTree = "<group>"; };
+		B6257462CC574E82A3ACDF4D /* GoogleAnalytics.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = GoogleAnalytics.a; path = FindHotel/Plugins/com.adobe.plugins.GAPlugin/GoogleAnalytics.a; sourceTree = "<group>"; };
+		C8D60CC431BB4172B4C7FE0E /* GoogleAnalytics.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = GoogleAnalytics.a; path = com.adobe.plugins.GAPlugin/GoogleAnalytics.a; sourceTree = "<group>"; };
+		CCA699DCF7E24128ABEB73A5 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = org.apache.cordova.inappbrowser/CDVInAppBrowser.m; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
-		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "FindHotel/config.xml"; sourceTree = "<group>"; };
-		319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		CCA699DCF7E24128ABEB73A5 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		A77BE332DFEF4A24BCCFB87A /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D77842B018B24EDD00C4FCDF /* AppsFlyer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyer.h; path = ../../../../../AppsFlyer/platform/ios/AppsFlyer.h; sourceTree = "<group>"; };
+		D77842B118B24EDD00C4FCDF /* AppsFlyerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyerPlugin.h; path = ../../../../../AppsFlyer/platform/ios/AppsFlyerPlugin.h; sourceTree = "<group>"; };
+		D77842B218B24EDD00C4FCDF /* AppsFlyerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppsFlyerPlugin.m; path = ../../../../../AppsFlyer/platform/ios/AppsFlyerPlugin.m; sourceTree = "<group>"; };
+		D77842B618B2500000C4FCDF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D77842B818B26D3000C4FCDF /* AppsFlyerTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppsFlyerTracker.h; path = "../../../../../../../../Downloads/AF-iOS-SDK-v2.5.3.6/AppsFlyerTracker.h"; sourceTree = "<group>"; };
+		D77842B918B26D4200C4FCDF /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppsFlyerLib.a; path = "../../../../../../Downloads/AF-iOS-SDK-v2.5.3.6/libAppsFlyerLib.a"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = FindHotel/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +141,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77842BB18B26DE800C4FCDF /* libAppsFlyerLib.a in Frameworks */,
+				D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */,
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */,
+				BD6AE9F0150B48D69EF168C8 /* GoogleAnalytics.a in Frameworks */,
+				6C736DBA8B7B4E0386034988 /* CoreData.framework in Frameworks */,
+				D25ADF04BBB749CFAAAC17EB /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +168,7 @@
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			name = Classes;
-			path = "FindHotel/Classes";
+			path = FindHotel/Classes;
 			sourceTree = SOURCE_ROOT;
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -184,7 +218,7 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
-			path = "FindHotel";
+			path = FindHotel;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -199,17 +233,22 @@
 				8D1107310486CEB800E47090 /* FindHotel-Info.plist */,
 			);
 			name = Resources;
-			path = "FindHotel/Resources";
+			path = FindHotel/Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D77842B918B26D4200C4FCDF /* libAppsFlyerLib.a */,
+				D77842B618B2500000C4FCDF /* AdSupport.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */,
+				B6257462CC574E82A3ACDF4D /* GoogleAnalytics.a */,
+				058520F59AC84D9C88A6FD25 /* CoreData.framework */,
+				0DE5BA4DCA24463FBB4C53BB /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,11 +264,25 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				D77842B818B26D3000C4FCDF /* AppsFlyerTracker.h */,
+				D77842B018B24EDD00C4FCDF /* AppsFlyer.h */,
+				D77842B118B24EDD00C4FCDF /* AppsFlyerPlugin.h */,
+				D77842B218B24EDD00C4FCDF /* AppsFlyerPlugin.m */,
 				CCA699DCF7E24128ABEB73A5 /* CDVInAppBrowser.m */,
 				A77BE332DFEF4A24BCCFB87A /* CDVInAppBrowser.h */,
+				8265C6D099A04E03A55019F5 /* CDVDevice.m */,
+				6DBC99329CD5443990B36935 /* CDVDevice.h */,
+				AC048547954640D0AB0620D5 /* GAPlugin.m */,
+				C8D60CC431BB4172B4C7FE0E /* GoogleAnalytics.a */,
+				70847DAEA1B343779F4BF915 /* GAITransactionItem.h */,
+				B2A6CEF8E29E4A90A9161433 /* GAITransaction.h */,
+				A38ECC7017F74163BDCD6D1B /* GAITracker.h */,
+				91C05746240440CC80A0638D /* GAITrackedViewController.h */,
+				6181B9358A6D43EBB00FEB80 /* GAI.h */,
+				86CA319461F34E3380D0306C /* GAPlugin.h */,
 			);
 			name = Plugins;
-			path = "FindHotel/Plugins";
+			path = FindHotel/Plugins;
 			sourceTree = SOURCE_ROOT;
 		};
 		308D052D1370CCF300D202BF /* icons */ = {
@@ -300,8 +353,8 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "FindHotel";
-			productName = "FindHotel";
+			name = FindHotel;
+			productName = FindHotel;
 			productReference = 1D6058910D05DD3D006BFB54 /* FindHotel.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -410,9 +463,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				D77842B418B24EDD00C4FCDF /* AppsFlyerPlugin.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				A9141A9CC3CD4E019019C95C /* CDVInAppBrowser.m in Sources */,
+				DD0B025048F141319ED7140B /* CDVDevice.m in Sources */,
+				B4B33E9312E648DC86511507 /* GAPlugin.m in Sources */,
+				C2BA613697B7467EAC5D43D4 /* GoogleAnalytics.a in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +533,13 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "FindHotel/FindHotel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
+					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
+					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -489,8 +553,9 @@
 					"-force_load",
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
+					"-lAppsFlyerLib",
 				);
-				PRODUCT_NAME = "FindHotel";
+				PRODUCT_NAME = FindHotel;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -507,6 +572,12 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "FindHotel/FindHotel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
+					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
+					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -520,8 +591,9 @@
 					"-force_load",
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
+					"-lAppsFlyerLib",
 				);
-				PRODUCT_NAME = "FindHotel";
+				PRODUCT_NAME = FindHotel;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -536,7 +608,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Aleksey Cherkasskiy (YQ77H7768M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aleksey Cherkasskiy (YQ77H7768M)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
@@ -582,7 +655,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Aleksey Cherkasskiy (YQ77H7768M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aleksey Cherkasskiy (YQ77H7768M)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";

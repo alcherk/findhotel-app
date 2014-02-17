@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", function(){
   var initialize = function(){
-    var ref = window.open('http://hotels.findhotel.io/?mobile=1&label=android', '_blank', 'location=no,hidden=yes'); 
+    var ref = window.open('http://hotels.findhotel.io/?mobile=1&label=android-' + window.device.uuid, '_blank', 'location=no,hidden=yes');
     ref.addEventListener('exit', function(event) { 
       initialize();
     });
