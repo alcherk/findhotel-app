@@ -29,6 +29,7 @@
 #import "MainViewController.h"
 
 #import <Cordova/CDVPlugin.h>
+//#import "AppsFlyerTracker.h"
 
 @implementation AppDelegate
 
@@ -128,6 +129,12 @@
 - (void)applicationDidReceiveMemoryWarning:(UIApplication*)application
 {
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
+}
+
+-(void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // Track Installs, updates & sessions(app opens) (You must include this API to enable tracking)
+    //[[AppsFlyerTracker sharedTracker] trackAppLaunch];
 }
 
 @end

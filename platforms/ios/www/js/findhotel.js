@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", function(){
   var initialize = function(){
-    var ref = window.open('http://hotels.findhotel.io/?mobile=1&label=android-' + window.device.uuid, '_blank', 'location=no,hidden=yes');
+    var ref = window.open('http://hotels.findhotel.io/?mobile=1&label=ios-' + window.device.uuid, '_blank', 'location=no,hidden=yes,toolbar=no');
     ref.addEventListener('exit', function(event) { 
       initialize();
     });
@@ -8,7 +8,7 @@ document.addEventListener("deviceready", function(){
       ref.show();
     });
     ref.addEventListener('loadstart', function(event) { 
-      alert('aa');
+      //alert('aa');
       ref.hide();
       
     });

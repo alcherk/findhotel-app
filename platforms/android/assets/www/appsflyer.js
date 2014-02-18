@@ -7,12 +7,12 @@
 		return (typeof value !== 'undefined') && (typeof value === 'string');
 	}
 
-	AppsFlyer.prototype.notifyAppID = function (appId, devKey, eventName, eventValue) {
+	AppsFlyer.prototype.notifyAppID = function (appId, devKey, uuid, eventName, eventValue) {
 		if (isString(appId) &&
 				isString(devKey)) {
 			if (isString(eventName) &&
 					eventName.length > 0) {
-				cordova.exec(null, null, "AppsFlyerPlugin", "notifyAppID", [appId, devKey, eventName, eventValue]);
+				cordova.exec(null, null, "AppsFlyerPlugin", "notifyAppID", [appId, devKey, uuid, eventName, eventValue]);
 			} else {
 				cordova.exec(null, null, "AppsFlyerPlugin", "notifyAppID", [appId, devKey]);
 			}

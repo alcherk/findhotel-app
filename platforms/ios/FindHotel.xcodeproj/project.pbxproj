@@ -45,9 +45,9 @@
 		C2BA613697B7467EAC5D43D4 /* GoogleAnalytics.a in Sources */ = {isa = PBXBuildFile; fileRef = C8D60CC431BB4172B4C7FE0E /* GoogleAnalytics.a */; };
 		D25ADF04BBB749CFAAAC17EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5BA4DCA24463FBB4C53BB /* SystemConfiguration.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		D77842B418B24EDD00C4FCDF /* AppsFlyerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D77842B218B24EDD00C4FCDF /* AppsFlyerPlugin.m */; };
 		D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842B618B2500000C4FCDF /* AdSupport.framework */; };
-		D77842BB18B26DE800C4FCDF /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842B918B26D4200C4FCDF /* libAppsFlyerLib.a */; };
+		D77842BF18B288C100C4FCDF /* AppsFlyerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D77842BD18B288C100C4FCDF /* AppsFlyerPlugin.m */; };
+		D77842C118B288D200C4FCDF /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842C018B288D200C4FCDF /* libAppsFlyerLib.a */; };
 		DD0B025048F141319ED7140B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265C6D099A04E03A55019F5 /* CDVDevice.m */; };
 		E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
@@ -127,12 +127,11 @@
 		C8D60CC431BB4172B4C7FE0E /* GoogleAnalytics.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = GoogleAnalytics.a; path = com.adobe.plugins.GAPlugin/GoogleAnalytics.a; sourceTree = "<group>"; };
 		CCA699DCF7E24128ABEB73A5 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = org.apache.cordova.inappbrowser/CDVInAppBrowser.m; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
-		D77842B018B24EDD00C4FCDF /* AppsFlyer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyer.h; path = ../../../../../AppsFlyer/platform/ios/AppsFlyer.h; sourceTree = "<group>"; };
-		D77842B118B24EDD00C4FCDF /* AppsFlyerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsFlyerPlugin.h; path = ../../../../../AppsFlyer/platform/ios/AppsFlyerPlugin.h; sourceTree = "<group>"; };
-		D77842B218B24EDD00C4FCDF /* AppsFlyerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppsFlyerPlugin.m; path = ../../../../../AppsFlyer/platform/ios/AppsFlyerPlugin.m; sourceTree = "<group>"; };
 		D77842B618B2500000C4FCDF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		D77842B818B26D3000C4FCDF /* AppsFlyerTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppsFlyerTracker.h; path = "../../../../../../../../Downloads/AF-iOS-SDK-v2.5.3.6/AppsFlyerTracker.h"; sourceTree = "<group>"; };
-		D77842B918B26D4200C4FCDF /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppsFlyerLib.a; path = "../../../../../../Downloads/AF-iOS-SDK-v2.5.3.6/libAppsFlyerLib.a"; sourceTree = "<group>"; };
+		D77842BC18B288C100C4FCDF /* AppsFlyerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerPlugin.h; sourceTree = "<group>"; };
+		D77842BD18B288C100C4FCDF /* AppsFlyerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsFlyerPlugin.m; sourceTree = "<group>"; };
+		D77842BE18B288C100C4FCDF /* AppsFlyerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerTracker.h; sourceTree = "<group>"; };
+		D77842C018B288D200C4FCDF /* libAppsFlyerLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsFlyerLib.a; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = FindHotel/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +140,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77842BB18B26DE800C4FCDF /* libAppsFlyerLib.a in Frameworks */,
 				D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */,
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
@@ -150,6 +148,7 @@
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */,
 				BD6AE9F0150B48D69EF168C8 /* GoogleAnalytics.a in Frameworks */,
+				D77842C118B288D200C4FCDF /* libAppsFlyerLib.a in Frameworks */,
 				6C736DBA8B7B4E0386034988 /* CoreData.framework in Frameworks */,
 				D25ADF04BBB749CFAAAC17EB /* SystemConfiguration.framework in Frameworks */,
 			);
@@ -239,7 +238,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D77842B918B26D4200C4FCDF /* libAppsFlyerLib.a */,
+				D77842C018B288D200C4FCDF /* libAppsFlyerLib.a */,
 				D77842B618B2500000C4FCDF /* AdSupport.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
@@ -264,10 +263,9 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				D77842B818B26D3000C4FCDF /* AppsFlyerTracker.h */,
-				D77842B018B24EDD00C4FCDF /* AppsFlyer.h */,
-				D77842B118B24EDD00C4FCDF /* AppsFlyerPlugin.h */,
-				D77842B218B24EDD00C4FCDF /* AppsFlyerPlugin.m */,
+				D77842BC18B288C100C4FCDF /* AppsFlyerPlugin.h */,
+				D77842BD18B288C100C4FCDF /* AppsFlyerPlugin.m */,
+				D77842BE18B288C100C4FCDF /* AppsFlyerTracker.h */,
 				CCA699DCF7E24128ABEB73A5 /* CDVInAppBrowser.m */,
 				A77BE332DFEF4A24BCCFB87A /* CDVInAppBrowser.h */,
 				8265C6D099A04E03A55019F5 /* CDVDevice.m */,
@@ -463,7 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				D77842B418B24EDD00C4FCDF /* AppsFlyerPlugin.m in Sources */,
+				D77842BF18B288C100C4FCDF /* AppsFlyerPlugin.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				A9141A9CC3CD4E019019C95C /* CDVInAppBrowser.m in Sources */,
@@ -538,6 +536,7 @@
 					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
 					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
 					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
+					"/Users/lex/Dropbox/Projects/oDesk/findhotel-app/platforms/ios",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -577,6 +576,7 @@
 					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
 					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
 					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
+					"/Users/lex/Dropbox/Projects/oDesk/findhotel-app/platforms/ios",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
