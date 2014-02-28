@@ -9,14 +9,31 @@
       <script type="text/javascript" src="appsflyer.js"></script>
       <script type="text/javascript" src="js/findhotel.js"></script>
     </body>
+    <script type="text/javascript">
+        window.onerror = function(message, url, lineNumber) {
+            console.log("Error: " + message + " in " + url + " at line " + lineNumber);
+        }
+    </script>
     <script language="JavaScript" type="text/javascript">
         // wait for PhoneGap to load
       	document.addEventListener("deviceready", onDeviceReady, false);
       	function onDeviceReady() {
+            if (typeof window.device === 'undefined') {
+                console.log('DeviceID plugin is not loaded');
+            }
+            
+            window.device = window.device || { uuid: -1 };
+            
+            if (device.uuid === -1) {
+                console.log('DeviceID plugin is not loaded');
+            } else {
+                console.log('uuid: ' + device.uuid);
+            }
+            
 		    console.log('device ID: ' + device.uuid);
             
 		    var devKey = 'Pt68tpKJETmrYNtFEpUwXF';
-		    var appId = '779563722';
+		    var appId = '760878928';
 		    var eventName = 'app_started';	// optional
 		    var eventValue = device.uuid;	// optional
             
