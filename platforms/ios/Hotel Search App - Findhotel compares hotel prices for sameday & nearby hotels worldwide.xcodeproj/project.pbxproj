@@ -23,10 +23,10 @@
 		A9141A9CC3CD4E019019C95C /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA699DCF7E24128ABEB73A5 /* CDVInAppBrowser.m */; };
 		B4B33E9312E648DC86511507 /* GAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AC048547954640D0AB0620D5 /* GAPlugin.m */; };
 		BD6AE9F0150B48D69EF168C8 /* GoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6257462CC574E82A3ACDF4D /* GoogleAnalytics.a */; };
+		C4FF938818C0F47600824F64 /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842C018B288D200C4FCDF /* libAppsFlyerLib.a */; };
 		D25ADF04BBB749CFAAAC17EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5BA4DCA24463FBB4C53BB /* SystemConfiguration.framework */; };
 		D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842B618B2500000C4FCDF /* AdSupport.framework */; };
 		D77842BF18B288C100C4FCDF /* AppsFlyerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D77842BD18B288C100C4FCDF /* AppsFlyerPlugin.m */; };
-		D77842C118B288D200C4FCDF /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842C018B288D200C4FCDF /* libAppsFlyerLib.a */; };
 		D77842C618B392E000C4FCDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77842C518B392E000C4FCDF /* Images.xcassets */; };
 		DD0B025048F141319ED7140B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265C6D099A04E03A55019F5 /* CDVDevice.m */; };
 		E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */; };
@@ -101,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FF938818C0F47600824F64 /* libAppsFlyerLib.a in Frameworks */,
 				D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */,
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
@@ -109,7 +110,6 @@
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */,
 				BD6AE9F0150B48D69EF168C8 /* GoogleAnalytics.a in Frameworks */,
-				D77842C118B288D200C4FCDF /* libAppsFlyerLib.a in Frameworks */,
 				6C736DBA8B7B4E0386034988 /* CoreData.framework in Frameworks */,
 				D25ADF04BBB749CFAAAC17EB /* SystemConfiguration.framework in Frameworks */,
 			);
@@ -291,7 +291,7 @@
 				LastUpgradeCheck = 500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = WD4E9Z2WK8;
+						DevelopmentTeam = L4EN64G3A2;
 					};
 				};
 			};
@@ -435,8 +435,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Oz Har Adir (7E4N55VF94)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Oz Har Adir (7E4N55VF94)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -448,10 +448,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
-					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
-					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
-					"/Users/lex/Dropbox/Projects/oDesk/findhotel-app/platforms/ios",
+					"/Users/uuu_69/Documents/findhotel-app/platforms/ios",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -470,7 +467,7 @@
 					"-lAppsFlyerLib",
 				);
 				PRODUCT_NAME = "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D02CCCD9-5FDA-47DA-9975-F28140031469";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -482,8 +479,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Oz Har Adir (7E4N55VF94)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Oz Har Adir (7E4N55VF94)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FindHotel/Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide-Prefix.pch";
@@ -493,10 +490,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
-					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
-					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
-					"/Users/lex/Dropbox/Projects/oDesk/findhotel-app/platforms/ios",
+					"/Users/uuu_69/Documents/findhotel-app/platforms/ios",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -514,7 +508,7 @@
 					"-lAppsFlyerLib",
 				);
 				PRODUCT_NAME = "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D02CCCD9-5FDA-47DA-9975-F28140031469";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
