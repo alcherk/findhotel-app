@@ -52,4 +52,7 @@
     <access origin="http://127.0.0.1*" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <access origin="*" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="com.adobe.plugins.GAPlugin" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
 </widget>

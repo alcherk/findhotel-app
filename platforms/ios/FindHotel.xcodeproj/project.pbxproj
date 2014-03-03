@@ -55,7 +55,7 @@
 		0DE5BA4DCA24463FBB4C53BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* FindHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
 		23F3E4A29D2E423C9A19069A /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = org.apache.cordova.console/CDVLogger.h; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide.app */,
+				1D6058910D05DD3D006BFB54 /* FindHotel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide */ = {
+		1D6058900D05DD3D006BFB54 /* FindHotel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FindHotel" */;
 			buildPhases = (
 				304B58A110DAC018002A0835 /* Copy www directory */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -277,9 +277,9 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide";
+			name = FindHotel;
 			productName = FindHotel;
-			productReference = 1D6058910D05DD3D006BFB54 /* Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* FindHotel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FindHotel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -319,7 +319,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide */,
+				1D6058900D05DD3D006BFB54 /* FindHotel */,
 			);
 		};
 /* End PBXProject section */
@@ -469,7 +469,7 @@
 					"-ObjC",
 					"-lAppsFlyerLib",
 				);
-				PRODUCT_NAME = "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide";
+				PRODUCT_NAME = FindHotel;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -513,7 +513,7 @@
 					"-ObjC",
 					"-lAppsFlyerLib",
 				);
-				PRODUCT_NAME = "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide";
+				PRODUCT_NAME = FindHotel;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -615,7 +615,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FindHotel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -624,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Hotel Search App - Findhotel compares hotel prices for sameday & nearby hotels worldwide" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FindHotel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
