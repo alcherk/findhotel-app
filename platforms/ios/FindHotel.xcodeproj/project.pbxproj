@@ -446,13 +446,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "FindHotel/FindHotel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
-					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
-					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
-					"/Users/lex/Dropbox/Projects/oDesk/findhotel-app/platforms/ios",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -491,13 +485,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "FindHotel/FindHotel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\\\"$(SRCROOT)/FindHotel/Plugins/com.adobe.plugins.GAPlugin\\\"",
-					/Users/lex/Dropbox/Projects/oDesk/AppsFlyer/platform/ios,
-					"/Users/lex/Downloads/AF-iOS-SDK-v2.5.3.6",
-					"/Users/lex/Dropbox/Projects/oDesk/findhotel-app/platforms/ios",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
