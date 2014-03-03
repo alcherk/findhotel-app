@@ -8,7 +8,6 @@ document.addEventListener("deviceready", function(){
       ref.show();
     });
     ref.addEventListener('loadstart', function(event) { 
-      alert('aa');
       ref.hide();
       
     });
