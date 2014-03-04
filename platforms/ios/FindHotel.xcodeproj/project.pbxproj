@@ -464,7 +464,7 @@
 					"-force_load",
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
-					"-lAppsFlyerLib",
+					"\"$(PROJECT_DIR)/libAppsFlyerLib.a\"",
 				);
 				PRODUCT_NAME = FindHotel;
 				PROVISIONING_PROFILE = "";
@@ -505,7 +505,7 @@
 					"-force_load",
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
-					"-lAppsFlyerLib",
+					"\"$(PROJECT_DIR)/libAppsFlyerLib.a\"",
 				);
 				PRODUCT_NAME = FindHotel;
 				PROVISIONING_PROFILE = "";
