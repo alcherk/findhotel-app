@@ -24,10 +24,10 @@
 		B4B33E9312E648DC86511507 /* GAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AC048547954640D0AB0620D5 /* GAPlugin.m */; };
 		BD6AE9F0150B48D69EF168C8 /* GoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6257462CC574E82A3ACDF4D /* GoogleAnalytics.a */; };
 		D25ADF04BBB749CFAAAC17EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5BA4DCA24463FBB4C53BB /* SystemConfiguration.framework */; };
-		D74B1D0C18C4FA2D00299FAD /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842C018B288D200C4FCDF /* libAppsFlyerLib.a */; };
 		D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842B618B2500000C4FCDF /* AdSupport.framework */; };
 		D77842BF18B288C100C4FCDF /* AppsFlyerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D77842BD18B288C100C4FCDF /* AppsFlyerPlugin.m */; };
 		D77842C618B392E000C4FCDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77842C518B392E000C4FCDF /* Images.xcassets */; };
+		D7E9704B18C5CA2A00A114F5 /* libAppsFlyerLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77842C018B288D200C4FCDF /* libAppsFlyerLib.a */; };
 		DD0B025048F141319ED7140B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265C6D099A04E03A55019F5 /* CDVDevice.m */; };
 		E804276FFDE64DD08216D117 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319E240EBCEE4563AF5F43A4 /* CoreMotion.framework */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74B1D0C18C4FA2D00299FAD /* libAppsFlyerLib.a in Frameworks */,
+				D7E9704B18C5CA2A00A114F5 /* libAppsFlyerLib.a in Frameworks */,
 				D77842B718B2500000C4FCDF /* AdSupport.framework in Frameworks */,
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
@@ -446,7 +446,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "FindHotel/FindHotel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -485,7 +488,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "FindHotel/FindHotel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
